@@ -1,14 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #27292c;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #282D35;
   color: white;
 }
 
-h1 {
-  margin-top: 30px;
+header {
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 25px;
 }
 
-img {
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav > img {
   width: 40px;
+  margin-right: 7px;
+}
+
+nav > span {
+  color: #61DAFB;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+main {
+  padding: 60px 30px;
+}
+
+main > h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.facts-list {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+
+
+li {
+  margin-bottom: 15px;
+}
+
+li::marker {
+  color: #00d8ff;   /* Aqua blue */
+  font-size: 1.6em; /* Make it bigger */
+}
+
+/* .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}  */
+
+
+footer {
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #07070760;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
