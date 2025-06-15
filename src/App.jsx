@@ -1,14 +1,24 @@
-import Header from './components/Navbar'
-import Main  from './components/Main'  
+import Header from "./components/Header"
+import Entry from "./components/Entry"
+import data from "./data"
 
-
-function App(){
-    return(
-      <>
-        <Header />
-        <Main />
-      </>
+export default function App() {
+    
+    const entryElements = data.map((entry) => {
+        return (
+            <Entry
+                key={entry.id}
+                {...entry}
+            />
+        )
+    })
+    
+    return (
+        <>
+            <Header />
+            <main className="container">
+                {entryElements}
+            </main>
+        </>
     )
-  }
-
-  export default App
+}
